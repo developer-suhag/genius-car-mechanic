@@ -4,7 +4,7 @@ import Experts from '../Experts/Experts';
 import Services from '../Services/Services';
 
 const Home = () => (
-    <div style={{ padding: '20px 40px' }}>
+    <div>
         <Banner />
         <Services />
         <Experts />

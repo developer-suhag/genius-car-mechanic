@@ -13,7 +13,7 @@ const Services = () => {
         loadData();
     }, []);
     return (
-        <div className="py-5">
+        <div id="services" className="container py-5">
             <h3 className="text-green">Services</h3>
             <div className="service-container">
                 {services.map((service) => (
