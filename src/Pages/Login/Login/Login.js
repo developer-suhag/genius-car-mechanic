@@ -1,10 +1,17 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 
-const Login = () => (
-    <div className="container py-5">
-        <Button variant="primary">Google Sign IN</Button>
-    </div>
-);
+const Login = () => {
+    const { singInUsingGoogle } = useAuth();
+    return (
+        <div className="container py-5">
+            <h3>Please LogIn</h3>
+            <Button onClick={singInUsingGoogle} variant="primary">
+                Google Sign IN
+            </Button>
+        </div>
+    );
+};
 
 export default Login;
