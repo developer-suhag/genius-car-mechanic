@@ -1,0 +1,12 @@
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-container input,
+textarea {
+  width: 40%;
+}

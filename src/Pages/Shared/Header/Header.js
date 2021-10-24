@@ -30,6 +30,12 @@ const Header = () => {
             <Nav.Link className="text-white" as={Link} to="/home#services">
               Services
             </Nav.Link>
+            <Nav.Link className="text-white" as={Link} to="/addSerivce">
+              Add Service
+            </Nav.Link>
+            <Nav.Link className="text-white" as={Link} to="/manage">
+              Manage Service
+            </Nav.Link>
             <Nav.Link className="text-white" as={Link} to="/home#experts">
               Experts
             </Nav.Link>
