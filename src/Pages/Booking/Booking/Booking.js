@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 // import { useParams } from 'react-router';
 
@@ -9,7 +7,7 @@ const Booking = () => {
   console.log(bookingId);
   const [service, setService] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${bookingId}`)
+    fetch(`https://blooming-taiga-92978.herokuapp.com/services/${bookingId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);

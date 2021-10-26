@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
-
 import "./AddService.css";
 
 const AddService = () => {
@@ -12,12 +11,14 @@ const AddService = () => {
     reset,
   } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/services", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("service add successfuly");
-        reset();
-      }
-    });
+    axios
+      .post("https://blooming-taiga-92978.herokuapp.com/services", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("service add successfuly");
+          reset();
+        }
+      });
   };
   return (
     <div>
